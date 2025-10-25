@@ -1,0 +1,1246 @@
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+:focus {
+    outline: 0;
+}
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "BaninterFamily", sans-serif;
+}
+body {
+    width: 100%;
+    background: url("./themes/fisaDesert/images/background_omnia.jpg") no-repeat fixed center top #ff8536;
+    background-size: 100% auto;
+    color: #000;
+}
+textarea {
+    padding: 5px;
+    text-align: left;
+    height: 350px;
+    width: 230px;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(0, 0, 0, 0.2);
+    border: #fff 1px inset;
+    background: #c4c5ca;
+}
+input,
+textarea,
+keygen,
+select,
+button {
+    font-family: "BaninterFamily", sans-serif;
+}
+p {
+    color: #363636;
+}
+#header {
+    position: relative;
+}
+#content {
+    width: 100%;
+    position: relative;
+    font-size: 1em;
+}
+#logo {
+    height: 77px;
+    margin: 75px auto 15px;
+    position: relative;
+    width: 419px;
+}
+#logo > img {
+    width: 100%;
+    height: auto;
+}
+#topnavhome {
+    position: relative;
+    text-align: center;
+}
+ul.menuhome {
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0 auto;
+    opacity: 0.74;
+    width: auto;
+}
+ul.menuhome li,
+ul.menuhome li > a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+ul.menuhome li {
+    border-right: 1px solid #fff;
+    padding: 5px 10px;
+}
+ul.menuhome li.first-item.bold {
+    font-weight: bold;
+    padding: 5px 10px 5px 0;
+}
+ul.menuhome li.last-item {
+    border-right-style: none;
+    padding: 0 0 0 10px;
+}
+#shadowheader {
+    width: 100%;
+    height: 20px;
+}
+#mainwindow {
+    border: 16px solid rgba(255, 255, 255, 0.47);
+    min-height: 345px;
+    margin: 55px auto 0;
+    position: relative;
+    width: 1040px;
+    font-size: 1em;
+}
+#headerwindow {
+    display: none;
+    font-size: 1.5em;
+    height: 55px;
+    position: relative;
+}
+#headerwindow p {
+    color: #3e3e3e;
+    letter-spacing: 0;
+    line-height: 55px;
+    vertical-align: middle;
+    padding-left: 20px;
+    text-align: center;
+    background: rgba(236, 236, 236, 0.8);
+}
+#formwindow {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    background: #ebebec;
+}
+.fisaDesert .fisaValidTooltip,
+.fisaDesert .fisaValidTooltipDialog {
+    top: -8%;
+}
+.screenLogin .input-widget,
+.screenLoginFinal .input-widget {
+    width: 261px;
+}
+.screenLogin .input-widget .fisaLabel-login,
+.screenLoginFinal .input-widget .fisaLabel-login {
+    width: 105px;
+}
+.screenLogin .input-widget .dijitTextBox,
+.screenLoginFinal .input-widget .dijitTextBox {
+    min-width: 100px !important;
+    width: 155px !important;
+    float: left;
+}
+.screenLogin .button-section .dijitButton .dijitButtonNode {
+    width: 260px !important;
+}
+.screenLoginFinal .button-section .dijitButton .dijitButtonNode {
+    width: 125px !important;
+}
+.screenLoginFinal .input-widget.security-phrase-icon {
+    width: 98%;
+    margin-bottom: 20px;
+}
+.screenLoginFinal .fisaImagePicker {
+    margin: 0 0 20px !important;
+    padding: 0;
+}
+.screenLoginFinal .fisaImagePicker td {
+    background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+    border: 5px solid #c6c6c3;
+    border-radius: 5px;
+}
+.screenLoginFinal .input-widget.security-phrase-icon .fisaComponentGridRightCell .fisaLabel {
+    background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+    border-color: #cdd0d1;
+    border-radius: 0 3px 3px 0;
+    border-style: solid solid solid none;
+    border-width: 1px;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    width: 220px;
+}
+.dijitContentPane.mainContainer {
+    padding: 0;
+    display: inline;
+}
+.row-form-login {
+    display: block;
+    min-height: 50px;
+    vertical-align: top;
+    width: 100%;
+    overflow: hidden;
+}
+.row-form-login.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.backgradient {
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 0, #f0f0f1 15%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(15%, #f0f0f1));
+    background: -webkit-linear-gradient(top, #fff 0, #f0f0f1 15%);
+    background: -o-linear-gradient(top, #fff 0, #f0f0f1 15%);
+    background: -ms-linear-gradient(top, #fff 0, #f0f0f1 15%);
+    background: linear-gradient(to bottom, #fff 0, #f0f0f1 15%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#f0f0f1',GradientType=0);
+}
+#lpwindow,
+#rpwindow {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: -2050px;
+    padding-bottom: 2050px;
+}
+#lpwindow {
+    min-height: 315px;
+}
+#rpwindow {
+    float: right;
+    min-height: 315px;
+}
+#wndmodalleft,
+#wndmodalright {
+    position: relative;
+    height: 90%;
+}
+#wndmodalleft {
+    float: left;
+    width: 380px;
+}
+#wndmodalright {
+    float: right;
+    width: 280px;
+}
+#wndmodalform h2,
+#wndmodalright h2 {
+    color: #02689b;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
+#wndmodalform h2 {
+    padding-left: 40px;
+}
+#wndmodalform p {
+    padding-top: 8pt;
+}
+#btnokmodal {
+    text-align: center;
+    padding-top: 20px;
+}
+#msgwindow p {
+    color: #363636;
+    line-height: 13pt;
+    font-weight: normal;
+}
+#cmpwindow {
+    padding: 80px 5% 0;
+}
+.boldtext {
+    color: #6d6e71;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.boldtext.align-left {
+    text-align: left;
+}
+.error {
+    text-align: center;
+}
+.error .boldtext {
+    color: #f00;
+    font-size: 1em;
+}
+.main-bullet-div .fisaImagePicker.customfisaImagePicker td {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: medium none !important;
+}
+.custom-bullet-image .bullet-image {
+    margin-top: 29px;
+}
+ul.bullet-arrow > li {
+    font-size: 1.32em;
+    line-height: 2.2em;
+    padding-left: 40px;
+    background: url("./themes/fisaDesert/images/cursor-bullet.png") no-repeat 0 5px;
+    background: url("./themes/fisaDesert/images/cursor-bullet.svg") no-repeat 0 5px;
+}
+ul.bullet-arrow > li > a {
+    color: #ff9200;
+}
+ul.bullet-orange > li {
+    line-height: 2.2em;
+    padding-left: 20px;
+    background: url("./themes/fisaDesert/images/bullet-orange.png") no-repeat 0 0.4em;
+}
+.bullet-image {
+    background-color: orange;
+    height: 8px;
+    width: 8px;
+    margin-top: 2px;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.bullet-div {
+    display: inline-block !important;
+    width: 80% !important;
+}
+ul.bullet-orange > li > a {
+    color: #ff9200;
+}
+label.fisaLabel.customStyleLogin {
+    background: transparent !important;
+    border-style: none !important;
+    line-height: normal !important;
+    font-size: 1.2em;
+}
+.main-bullet-div {
+    margin-left: 20px;
+}
+#rpwindow label,
+#rpwindow a {
+    display: block;
+}
+#ayuda {
+    padding: 80px 87px 0;
+}
+#accesoseguridad {
+    padding: 80px 25px 0;
+}
+#opcionesdesign {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 190px;
+    height: 24px;
+    z-index: 999999;
+}
+#opcionesdesign p a {
+    display: inline-block;
+    width: 70px;
+    height: 24px;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    margin-top: 5px;
+    margin-left: 4px;
+    background: #1a4d26;
+}
+#opcionesdesign p a:hover {
+    background: #76ba18;
+}
+#opcionesdesign p a span {
+    display: block;
+    padding-top: 5px;
+    padding-left: 8px;
+}
+.btnshkeyboard,
+.btnclosemodal,
+.btnshkeyboardmodal {
+    display: inline-block;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    height: 28px;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 31px;
+    background: #1a4d26;
+}
+.btnclosemodal {
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+#wndwmodal {
+    height: 554px;
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    overflow: hidden;
+}
+#wndwmodalcontent {
+    margin: 0 auto;
+    position: relative;
+    width: 664px;
+    height: 545px;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5), inset 0 0 1px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5), inset 0 0 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5), inset 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5), inset 0 0 1px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    top: -554px;
+}
+#wndwmodalheader {
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    background: rgba(236, 236, 236, 0.75);
+}
+#wndwmodalheaderbar {
+    position: relative;
+    margin: 0 auto;
+    height: 35px;
+    width: 605px;
+    border: 0;
+}
+#wndwmodalheaderbar h1 {
+    padding-top: 9px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+.whitetext {
+    color: #00529b;
+}
+.orangetext {
+    color: #666;
+}
+#wndwmodalinfo {
+    width: 100%;
+    height: 505px;
+    border-top: 1px solid #c9c9c9;
+}
+.button-form,
+.btnok {
+    background: url("./themes/fisaDesert/images/dijit-button-node-bg.png") 0 0 repeat-x #ff9200;
+    color: #fff;
+    border: 1px solid #ff9200;
+    border-radius: 3px;
+    width: 260px;
+    height: 26px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.button-form:hover {
+    background: url("./themes/fisaDesert/images/dijit-button-node-bg.png") 0 -56px repeat-x #ff9200;
+}
+.button-form:active {
+    background: url("./themes/fisaDesert/images/dijit-button-node-bg.png") 0 -28px repeat-x #ff9200;
+    -webkit-box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+.button-form span {
+    text-shadow: 0 1px 0 #000;
+}
+.button-form img {
+    height: 16px;
+    margin-left: 10px;
+    vertical-align: bottom;
+    width: 16px;
+}
+.button-section {
+    text-align: center;
+    width: 100%;
+    margin: 10px auto 20px;
+}
+.button-section .dijitButton {
+    margin: 0 5px;
+}
+.button-section .dijitButton .dijitButtonNode {
+    width: 110px !important;
+}
+#comments {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #f71;
+    display: hidden;
+}
+#footer {
+    font-size: 1em;
+    height: 30px;
+    margin-top: 10px;
+    width: 100%;
+}
+#copy {
+    color: #fff;
+    display: block;
+    font-weight: normal;
+    margin: 0 auto;
+    padding-top: 8px;
+    position: relative;
+    text-align: center;
+}
+#copy p {
+    padding-top: 0;
+    color: rgba(255, 255, 255, 0.74);
+}
+#faq,
+#faqtexto {
+    border-top: 1px solid #fff;
+    color: #888;
+    font-size: 1em;
+    height: 70px;
+    padding: 15px 115px;
+    right: 0;
+    text-align: left;
+    width: 100%;
+    z-index: 30;
+    background: url("shield-login.png") no-repeat 40px 50%;
+    background: url("shield-login.svg") no-repeat 40px 50%;
+}
+#faqtexto > p {
+    color: #706f72;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+#faqtexto > a {
+    display: inline;
+    color: #02689b;
+    padding-left: 20px;
+}
+.enfatize-text {
+    color: #ff9200;
+}
+.undeline-enfatize {
+    text-decoration: underline;
+}
+#usrwindow table {
+    width: 100%;
+}
+#usrwindow table {
+    width: 100%;
+}
+#usrwindow table tr td img {
+    padding-left: 50px;
+    padding-top: 10px;
+    text-align: center;
+}
+#usrwindow table tr td a {
+    color: #02689b;
+    display: block;
+    margin-top: -8px;
+    text-align: center;
+}
+#faq a {
+    cursor: pointer;
+    float: left;
+    overflow: hidden;
+    text-indent: 9999px;
+    margin-left: 6px;
+}
+#tipinfo {
+    display: none;
+}
+#msg-login-form {
+    background: url("info-icon-login.png") no-repeat 20px 50% #e0e1e2;
+    background: url("info-icon-login.svg") no-repeat 20px 50% #e0e1e2;
+    border-radius: 3px;
+    display: block;
+    height: 60px;
+    margin: 0 auto 20px 90px;
+    padding: 10px 0 10px 60px;
+    width: 295px;
+}
+span.text-msg-login-form {
+    color: #767578;
+    display: block;
+    font-size: 1.15em;
+}
+span.text-msg-login-form > a {
+    color: #ff9200;
+}
+.input-widget {
+    height: auto;
+    min-height: 24px;
+    margin: 0 0 8px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.input-widget .dijitTextBox {
+    background: #f6f6f6;
+    border-style: solid solid solid none;
+    border-radius: 0 3px 3px 0;
+    display: inline-block;
+    min-width: 150px !important;
+    width: 150px;
+    height: 26px;
+}
+.input-widget .dijitTextBox .dijitInputInner {
+    height: 24px;
+}
+.input-widget.no-icon .dijitTextBox {
+    border-radius: 3px;
+    border-style: solid;
+}
+.fisaLabel-login {
+    color: #3f3f44;
+    text-align: right;
+    width: 110px;
+    display: inline-block;
+    line-height: 24px;
+    border: 1px solid #cdd0d1;
+    background: #e7e7e7;
+    border-radius: 3px 0 0 3px;
+    padding-right: 8px;
+    float: left;
+}
+.input-widget.user-icon > .fisaLabel-login {
+    background: url("./themes/fisaDesert/images/user-icon-login.png") no-repeat 10px 0 #e7e7e7;
+    background: url("./themes/fisaDesert/images/user-icon-login.svg") no-repeat 10px 0 #e7e7e7;
+}
+.input-widget.padlock-icon > .fisaLabel-login {
+    background: url("./themes/fisaDesert/images/password-icon-login.png") no-repeat 10px 0 #e7e7e7;
+    background: url("./themes/fisaDesert/images/password-icon-login.svg") no-repeat 10px 0 #e7e7e7;
+}
+.input-widget.security-phrase-icon > .fisaLabel-login {
+    background: url("./themes/fisaDesert/images/check-icon-login.png") no-repeat 10px 0 #e7e7e7;
+    background: url("./themes/fisaDesert/images/check-icon-login.svg") no-repeat 10px 0 #e7e7e7;
+}
+.input-widget.computer-icon > .fisaLabel-login {
+    background: url("./themes/fisaDesert/images/computer-login.png") no-repeat 10px 0 #e7e7e7;
+    background: url("./themes/fisaDesert/images/computer-login.svg") no-repeat 10px 0 #e7e7e7;
+}
+.input-widget.email-icon > .fisaLabel-login {
+    background: url("./themes/fisaDesert/images/email-icon-login.svg") no-repeat 10px 0 #e7e7e7;
+    background: url("./themes/fisaDesert/images/email-icon-login.png") no-repeat 10px 0 #e7e7e7;
+}
+.input-widget.birthday-icon > .fisaLabel-login {
+    background: url("./themes/fisaDesert/images/birthday-icon-login.svg") no-repeat 10px 0 #e7e7e7;
+    background: url("./themes/fisaDesert/images/birthday-icon-login.png") no-repeat 10px 0 #e7e7e7;
+}
+.input-widget.identification-icon > .fisaLabel-login {
+    background: url("./themes/fisaDesert/images/identification-icon-login.svg") no-repeat 10px 0 #e7e7e7;
+    background: url("./themes/fisaDesert/images/identification-icon-login.png") no-repeat 10px 0 #e7e7e7;
+}
+.input-widget.secret-question-icon > .fisaLabel-login {
+    background: url("./themes/fisaDesert/images/secret-question-icon-login.svg") no-repeat 10px 0 #e7e7e7;
+    background: url("./themes/fisaDesert/images/secret-question-icon-login.png") no-repeat 10px 0 #e7e7e7;
+}
+.input-widget.secret-answer-icon > .fisaLabel-login {
+    background: url("./themes/fisaDesert/images/secret-answer-icon-login.svg") no-repeat 10px 0 #e7e7e7;
+    background: url("./themes/fisaDesert/images/secret-answer-icon-login.png") no-repeat 10px 0 #e7e7e7;
+}
+.input-widget.birthday-icon .dijitDateTextBox .dijitInputContainer {
+    border-radius: 0 3px 3px 0;
+    border-style: solid solid solid none;
+    height: 26px;
+    background: #f6f6f6;
+}
+.input-widget.identification-icon .dijitSelect .dijitButtonContents,
+.input-widget.secret-question-icon .dijitSelect .dijitButtonContents {
+    background: #f6f6f6;
+    border-radius: 0;
+    border-style: solid none;
+}
+.input-widget.identification-icon .dijitSelect.dijitDownArrowButton .dijitArrowButton.dijitDownArrowButton.dijitArrowButtonContainer,
+.input-widget.secret-question-icon .dijitSelect.dijitDownArrowButton .dijitArrowButton.dijitDownArrowButton.dijitArrowButtonContainer {
+    background: none repeat scroll 0 0 #f6f6f6;
+}
+.input-widget.captcha-icon .image-captcha {
+    border: 1px solid #cdd0d1;
+    border-radius: 3px;
+    display: inline-block;
+    height: 40px;
+    margin-right: 7px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 140px;
+}
+.input-widget.captcha-icon > .dijitTextBox {
+    border-radius: 3px;
+    border-style: solid;
+}
+a.fisaLink.info-link {
+    position: absolute;
+    background: url("question-icon-login.png") no-repeat 0 0;
+    background: url("question-icon-login.svg") no-repeat 0 0;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    border-radius: 0;
+    margin-left: 5px;
+    left: 100%;
+    top: 0;
+}
+a.fisaLink.info-link span {
+    font-size: 0;
+}
+.row-section {
+    display: block;
+}
+.col1 {
+    width: 6.86%;
+}
+.col2 {
+    width: 15.33%;
+}
+.col3 {
+    width: 23.8%;
+}
+.col4 {
+    width: 32.26%;
+}
+.col5 {
+    width: 40.73%;
+}
+.col6 {
+    width: 49.2%;
+}
+.col7 {
+    width: 57.66%;
+}
+.col8 {
+    width: 66.13%;
+}
+.col9 {
+    width: 74.6%;
+}
+.col10 {
+    width: 83.06%;
+}
+.col11 {
+    width: 91.53%;
+}
+.col12 {
+    width: 100%;
+}
+@media only screen and (max-width: 480px) {
+    .col1 {
+        width: 100%;
+    }
+    .col2 {
+        width: 100%;
+    }
+    .col3 {
+        width: 100%;
+    }
+    .col4 {
+        width: 100%;
+    }
+    .col5 {
+        width: 100%;
+    }
+    .col6 {
+        width: 100%;
+    }
+    .col7 {
+        width: 100%;
+    }
+    .col8 {
+        width: 100%;
+    }
+    .col9 {
+        width: 100%;
+    }
+    .col10 {
+        width: 100%;
+    }
+    .col11 {
+        width: 100%;
+    }
+    .col12 {
+        width: 100%;
+    }
+}
+.row-section-group-title {
+    border-bottom: 1px solid #ccc;
+    margin: 20px -5.5% 0;
+    padding-bottom: 25px;
+}
+.row-section-group {
+    background: -moz-linear-gradient(top, rgba(245, 245, 245, 1) 0, rgba(253, 253, 253, 1) 12%, rgba(253, 253, 253, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(245, 245, 245, 1)), color-stop(12%, rgba(253, 253, 253, 1)), color-stop(100%, rgba(253, 253, 253, 0)));
+    background: -webkit-linear-gradient(top, rgba(245, 245, 245, 1) 0, rgba(253, 253, 253, 1) 12%, rgba(253, 253, 253, 0) 100%);
+    background: -o-linear-gradient(top, rgba(245, 245, 245, 1) 0, rgba(253, 253, 253, 1) 12%, rgba(253, 253, 253, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(245, 245, 245, 1) 0, rgba(253, 253, 253, 1) 12%, rgba(253, 253, 253, 0) 100%);
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 1) 0, rgba(253, 253, 253, 1) 12%, rgba(253, 253, 253, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5',endColorstr='#00fdfdfd',GradientType=0);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.inline-widget {
+    display: inline !important;
+    margin-right: 10px !important;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+.inner-padding-left {
+    padding-left: 15%;
+}
+.margin10 {
+    margin: 10px auto !important;
+}
+.margin15 {
+    margin: 15px auto !important;
+}
+.margin20 {
+    margin: 20px auto !important;
+}
+.no-margin-top {
+    margin-top: 0 !important;
+}
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+.fix-margin-bottom {
+    margin-bottom: 4px;
+}
+.fix-margin-lateral {
+    margin-left: -5.5% !important;
+    margin-right: -5.5% !important;
+}
+.border-top {
+    border-top: 1px solid #ccc;
+}
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.border-left {
+    border-left: 1px solid #ccc;
+}
+.border-right {
+    border-right: 1px solid #ccc;
+}
+.border-all {
+    border: 1px solid #ccc;
+}
+.no-border-top {
+    border-top: 0;
+}
+.no-border-bottom {
+    border-bottom: 0;
+}
+.no-border-left {
+    border-left: none;
+}
+.no-border-right {
+    border-right: 0;
+}
+.no-border-all {
+    border: 0;
+}
+.sm-widget label {
+    width: 80px !important;
+}
+.sm-widget .dijitTextBox {
+    width: 110px !important;
+}
+.md-widget label {
+    width: 180px !important;
+}
+.md-widget .dijitTextBox {
+    width: 180px !important;
+}
+.md-widget .dijitSelect {
+    width: 180px !important;
+}
+.md-widget .dijitContentPane {
+    width: 230px !important;
+}
+.md-widget div[id^="ec_fisa_widget_DateTextBox"] {
+    width: 330px !important;
+}
+.bg-widget label {
+    width: 220px !important;
+}
+.bg-widget .dijitTextBox {
+    width: 250px !important;
+}
+.bg-widget .dijitSelect {
+    width: 250px !important;
+}
+.bg-widget .dijitContentPane {
+    width: 300px !important;
+}
+.image-placeholder-container.align-center {
+    margin: 20px auto 10px;
+    width: 720px;
+}
+.image-placeholder {
+    background: #c3c3c3;
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    width: 135px;
+    height: 90px;
+    box-sizing: padding-box;
+}
+.image-placeholder.active {
+    border-color: rgba(255, 255, 255, 1);
+}
+.image-placeholder img {
+    width: 135px;
+    height: 90px;
+    border: 0;
+}
+.input-widget.security-phrase-icon .fisaLabel-login {
+    width: 210px !important;
+}
+.input-widget.security-phrase-icon .dijitTextBox {
+    width: 259px !important;
+}
+.securityQuestion .dijitSelect .dijitButtonText {
+    width: 200px !important;
+}
+.securityQuestion .dijitSelect .dijitButtonText .dijitSelectLabel {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.passphrasePicker .fisaComponentGridRightCell {
+    vertical-align: top;
+}
+.input-widget.security-phrase-icon .passphrasePicker,
+.input-widget.security-phrase-icon .passphrasePicker div {
+    margin: 0;
+}
+.input-widget.security-phrase-icon .passphrasePicker .fisaLabel {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.input-widget.security-phrase-icon.md-widget .dijitTextBox {
+    width: 283px !important;
+}
+.imageCustomPicker table.fisaCmpMsgWrap > tbody > tr > td,
+.input-widget.security-phrase-icon table.fisaCmpMsgWrap > tbody > tr > td {
+    position: relative;
+}
+.input-widget.security-phrase-icon table.fisaCmpMsgWrap > tbody > tr > td:nth-child(2) {
+    padding-left: 10px;
+}
+.fisaDesert .imageCustomPicker .fisaValidTooltip.fisaValidTooltipRight {
+    left: 0;
+    top: 60px;
+}
+.securityQuestionPicker > tbody > tr > td.fisaComponentGridLeftCell,
+.securityQuestionPicker > tbody > tr > td.fisaComponentGridRightCell {
+    padding: 4px 0;
+    vertical-align: top;
+}
+.fisaDesert .dijitSelect .dijitArrowButton {
+    height: 26px;
+    width: 26px;
+}
+.image-placeholder-container-small.align-center {
+    margin: 20px auto 10px;
+    width: auto;
+}
+.image-placeholder-small {
+    background: #c3c3c3;
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    width: 120px;
+    height: 75px;
+    box-sizing: padding-box;
+}
+.image-placeholder-small.active {
+    border-color: rgba(255, 255, 255, 1);
+}
+.image-placeholder-small img {
+    width: 120px;
+    height: 75px;
+    border: 0;
+}
+.progress-tracker {
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    min-width: 550px;
+}
+.step {
+    display: inline-block;
+    float: left;
+    width: 180px;
+}
+.label-position {
+    color: transparent;
+    font-style: oblique;
+    padding-left: 25px;
+}
+.step.active-step > .label-position {
+    color: #706f72;
+}
+.tracker-element {
+    background: url("./themes/fisaDesert/images/bgtrackstep.png") no-repeat 0 0;
+    display: block;
+    height: 26px;
+}
+.step.active-step > .tracker-element {
+    background: url("./themes/fisaDesert/images/bgtrackstep-active.png") no-repeat 0 0;
+}
+.arrow-progress {
+    background: url("./themes/fisaDesert/images/progress-arrow.png") no-repeat 0 0;
+    display: inline-block;
+    height: 26px;
+    margin-left: -15px;
+    width: 28px;
+}
+.step.active-step > .tracker-element > .arrow-progress {
+    background-position: 0 -26px;
+}
+.tracker-label {
+    display: inline-block;
+    vertical-align: top;
+}
+.tracker-label-text {
+    color: #706f72;
+    font-size: 1.1em;
+    line-height: 28px;
+    padding: 0 0 0 10px;
+    cursor: default;
+}
+.step.active-step > .tracker-element > .tracker-label > .tracker-label-text {
+    color: #fff;
+}
+.step.last-step .tracker-element {
+    background-position: 100% 0;
+}
+.step.last-step.active-step .tracker-element {
+    background-position: 100% 0;
+}
+.mainheadercontent.nobg {
+    background: 0;
+    margin: 30px 0 0;
+    padding-left: 60px;
+}
+.orangeText {
+    color: #ff9200;
+    font-size: 1.2em;
+    margin-right: 10px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 0.25em;
+}
+.text-message {
+    margin: 30px 0;
+}
+.confirm-message {
+    color: #706f72;
+    font-size: 1.2em;
+}
+.message-input {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #cdd0d1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.08);
+    display: inline-block;
+    left: 103%;
+    min-height: 24px;
+    padding: 10px 10px 10px 20px;
+    position: absolute;
+    top: -25%;
+    max-width: 250px;
+    min-width: 170px;
+}
+.arrow-mask {
+    height: 21px;
+    left: -12px;
+    overflow: hidden;
+    position: absolute;
+    top: 15%;
+    width: 12px;
+}
+.arrow-box {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #cdd0d1;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.08);
+    display: block;
+    height: 24px;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    width: 24px;
+}
+.message-text {
+    color: #ff9200;
+    display: block;
+    white-space: nowrap;
+    width: auto;
+}
+.title-form-widget {
+    margin-bottom: 8px;
+}
+.label-txt-title {
+    color: #ff9200;
+    font-size: 1.15em;
+    text-transform: uppercase;
+}
+.label-txt-title-lower-case {
+    color: #ff9200;
+    font-size: 1.15em;
+    text-transform: none;
+}
+table.fisaImagePicker {
+    border: none !important;
+    border-spacing: 0 !important;
+    margin: 10px 0 !important;
+}
+.dijitTextBox .dijitSpinnerButtonContainer,
+.dijitTextBox .dijitArrowButtonContainer,
+.dijitTextBox .dijitValidationContainer,
+.dijitTextBoxWarn .dijitValidationContainer,
+.dijitTextBoxEmphasize .dijitValidationContainer {
+    line-height: 24px;
+    padding-right: 6px;
+}
+#borderContainerTwo {
+    display: block;
+}
+.bg-widget.fix-tooltip .fisaValidTooltip,
+.bg-widget.fix-tooltip .fisaValidTooltipDialog {
+    left: 62.8% !important;
+}
+.bg-widget.fix-tooltip-keyboard .fisaValidTooltip,
+.bg-widget.fix-tooltip .fisaValidTooltipDialog {
+    left: 67% !important;
+}
+.md-widget.fix-tooltip-keyboard .fisaValidTooltip,
+.md-widget.fix-tooltip .fisaValidTooltipDialog {
+    left: 49% !important;
+}
+.messagePanelConfirmation.fix-messagePanelConfirmation {
+    padding-bottom: 0 !important;
+}
+.fisaDesert .dijitTooltipAbove {
+    color: #ff9200;
+    display: block;
+    white-space: normal;
+    width: auto;
+}
+.panelPopup .messagePanelPlain {
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+    width: 350px;
+    word-break: break-all;
+}
+.panelPopup .error,
+.panelPopup .warn,
+.panelPopup .info {
+    border: none !important;
+}
+.panelPopup .error .title,
+.panelPopup .warn .title,
+.panelPopup .info .title {
+    background: transparent !important;
+}
+.panelPopup .error .title td,
+.panelPopup .warn .title td,
+.panelPopup .info .title td {
+    background: transparent !important;
+    font-size: 1.1em;
+}
+.panelPopup .messagePanelPlain .error .title .tddetail,
+.panelPopup .messagePanelPlain .warn .title .tddetail,
+.panelPopup .messagePanelPlain .info .title .tddetail {
+    color: #ff7c00 !important;
+    font-size: 1em;
+    line-height: 50%;
+    position: absolute;
+    right: 58%;
+    top: 60%;
+    text-decoration: underline;
+}
+.panelPopup .messagePanelPlain .error .title .tddetailPopup,
+.panelPopup .messagePanelPlain .warn .title .tddetailPopup,
+.panelPopup .messagePanelPlain .info .title .tddetailPopup {
+    color: #ff7c00 !important;
+    font-size: 1em;
+    line-height: 50%;
+    text-decoration: underline;
+    text-align: left;
+}
+.fisaDesert .dijitDialog {
+    z-index: 3000 !important;
+}
+.title-form-widget.custom-lbl-phrase {
+    color: #706f72 !important;
+    font-size: 0.75em !important;
+    text-align: justify;
+    width: 377px;
+}
+.button-section .center table.title {
+    margin: 0 auto;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #000 transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+.cuerpoInfo {
+    min-width: 685px;
+    width: 685px;
+    height: 305px;
+    min-height: 305px;
+    position: relative;
+    background-image: url("../images/PopUP2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 103;
+    box-shadow: 0 0 0 #000;
+}
+.cabeceraInfo {
+    min-width: 685px;
+    width: 685px;
+    height: 30px;
+    min-height: 30px;
+    background-image: url("../images/PopUP2BTN.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 6%;
+    position: relative;
+    box-shadow: 0 0 0 #000;
+}
+    
